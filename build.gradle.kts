@@ -1,5 +1,6 @@
 plugins {
     id("org.jetbrains.kotlin.js") version "1.5.0"
+    id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
 }
 
 group = "com.paperlark"
@@ -31,8 +32,8 @@ dependencies {
     implementation("org.jetbrains:kotlin-react-dom:17.0.2-pre.154-kotlin-1.5.0")
     implementation(npm("react", "17.0.2"))
     implementation(npm("react-dom", "17.0.2"))
+    implementation(npm("react-is", "17.0.2"))
 
     implementation("org.jetbrains:kotlin-styled:5.2.3-pre.154-kotlin-1.5.0")
-    implementation(npm("styled-components", "~5.2.3"))
-
+    implementation(npm("styled-components", "5.3.1"))
 }
